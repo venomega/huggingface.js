@@ -524,6 +524,13 @@ export const LOCAL_APPS = {
 		displayOnModelPage: isLlamaCppGgufModel,
 		snippet: snippetLemonade,
 	},
+	"stable-diffusion.cpp": {
+		prettyLabel: "stable-diffusion.cpp",
+		docsUrl: "https://github.com/leejet/stable-diffusion.cpp",
+		mainTask: "text-to-image",
+		displayOnModelPage: isLlamaCppGgufModel,
+		snippet: snippetDockerModelRunner,
+	},
 } satisfies Record<string, LocalApp>;
 
 export type LocalAppKey = keyof typeof LOCAL_APPS;
